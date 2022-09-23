@@ -1,0 +1,35 @@
+@import "../scss/base";
+
+h1{
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    // background-color: red;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    @include xs{
+        background-color: gray;
+    }
+
+    @include sm{
+        background-color: rgb(128, 255, 0);
+    }
+
+    @include md{
+        background-color: rgb(249, 245, 0);
+    }
+
+    @include lg{
+        background-color: rgb(0, 12, 142);
+    }
+
+    @include xl{
+        background-color: rgb(88, 32, 0);
+        color: #fff;
+    }
+
+    @include breakpoint(1400px){
+        background-color: red;
+    }
+}
